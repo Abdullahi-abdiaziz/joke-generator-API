@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import "./App.css";
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
       }
 
       const result = await response.json();
-      console.log(result);
+      // console.log(result);
       setJoke(result[0].joke);
     } catch (error) {
       console.error("Error: ", error.message);
@@ -40,7 +39,7 @@ function App() {
           <p>Why did the sheep go to the doctor? He had a baah-baah throat.</p>
         )}
         <button onClick={fetchJoke}>New Joke!</button>
-      </div>
+       </div>
     </div>
   );
 }
