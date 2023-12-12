@@ -34,8 +34,11 @@ function App() {
     <div className="container">
       <h1 className="title">Random Joke Generator</h1>
       <div className="joke">
-        {joke && <p>{joke}</p>}
-
+        {joke ? (
+          <p>{joke}</p>
+        ) : (
+          <p>Why did the sheep go to the doctor? He had a baah-baah throat.</p>
+        )}
         <button onClick={fetchJoke}>New Joke!</button>
       </div>
     </div>

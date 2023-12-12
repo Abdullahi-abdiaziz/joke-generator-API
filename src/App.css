@@ -24,7 +24,7 @@ body {
 .title {
   font-size: 0.8rem;
   font-weight: 300;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   color: rgb(0, 84, 79);
 
   text-align: center;
@@ -35,7 +35,7 @@ body {
 .joke {
   display: flex;
   flex-direction: column;
-  padding: 2rem 3rem;
+  padding: 2rem;
 }
 
 .joke p {
